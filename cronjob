@@ -1,0 +1,7 @@
+# Cronjob command I used to run this shell script every week on Monday 9 AM and Friday 4 PM
+
+# Monday 9 AM
+0 9 * * 1 /home/ubuntu/aws_resourse_list.sh ap-south-1 ec2 >> /home/ubuntu/AWS_resources.txt 2>&1
+
+# Friday 4 PM
+0 16 * * 1 /home/ubuntu/aws_resourse_list.sh ap-south-1 ec2 >> /home/ubuntu/AWS_resources.txt 2>&1
